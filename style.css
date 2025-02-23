@@ -1,0 +1,44 @@
+body {
+    font-family: font1;
+    background-color: #F8F3D9;
+}
+
+@font-face {
+    font-family: font1;
+    src: url("static/Outfit-Regular.ttf");
+}
+@font-face {
+    font-family: font2;
+    src: url("static/Outfit-SemiBold.ttf");
+}
+
+.container-header {
+    text-align: center;
+}
+
+.cv {
+    font-size: 300%;
+}
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-content {
+    width: 210px;
+    height: 280px;
+}
+
+.container-paragraph {
+    list-style: none;
+    padding-left: 35%;
+    padding-right: 35%;
+    text-align: left;
+}
+
+nav {
+    background-color: #EBE5C2;
+    font-family: font2;
+}

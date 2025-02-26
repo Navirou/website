@@ -32,13 +32,31 @@ body {
 }
 
 .container-paragraph {
-    list-style: none;
-    padding-left: 35%;
-    padding-right: 35%;
-    text-align: left;
+    text-align: center;
 }
 
 nav {
     background-color: #EBE5C2;
     font-family: font2;
+}
+
+.transparent-table {
+    width: auto;
+    border-collapse: collapse;
+}
+
+.transparent-table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.container-form {
+    padding: 5%;
+}
+
+footer {
+    background-color: #EBE5C2;
+    text-align: right;
+    font-family: font2;
+    padding: 5px;
 }

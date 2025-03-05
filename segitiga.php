@@ -20,18 +20,14 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="bulan.php">Bulan</a>
-              </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="segitiga.php">Segitiga</a>
-              </li>
-                <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Segitiga</a>
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="kubus.php">Kubus</a>
               </li>
             </ul>
@@ -41,47 +37,38 @@
 
     <!-- isi -->
      <div class="container-header">
-        <h1 class="cv">Curiculum Vitae</h1>
+        <h1>Segitiga</h1>
         <br>
      </div>
-     
+
      <div class="container-content">
-        <img class="img-content" src="DSC08377-20.JPG">
+        <img class="img-content" src="triangle-line-black-icon-png_281642.jpg">
      </div>
-     
-     <br>
+    <center>
+      <form action="#" method="post">
+      <br><br>
+      <tr>
+        <td>
+          mau alasnya berapa cm : <input type="number" name="alas"><br>
+        </td>
+        <td>
+          mau tingginya berapa cm : <input type="number" name="tinggi"><br>
+        </td>
+      </tr>
+      <input type="submit" value="Kirim">
+      <input type="reset" value="Reset">
+    </form>
 
-     <div class="text-align-center">
-        <table class="transparent-table text-align-center mx-auto">
-          <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Ahmad Santosa</td>
-          </tr>
-          <tr>
-            <td>NIM</td>
-            <td>:</td>
-            <td>124240200</td>
-          </tr>
-          <tr>
-            <td>TTL</td>
-            <td>:</td>
-            <td>Klaten, 09 Februari 2005</td>
-          </tr>
-          <tr>
-            <td>Jenis Kelamin</td>
-            <td>:</td>
-            <td>Laki-laki</td>
-          </tr>
-          <tr>
-            <td>Alamat</td>
-            <td>:</td>
-            <td>Jatinom, Klaten</td>
-          </tr>
-        </table>
-     </div>
-
-     <br>
+    <?php 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $alas = $_POST['alas'];
+    $tinggi = $_POST['tinggi'];
+    $luas = ($alas * $tinggi) / 2;
+    echo "Lsegitiga = 1/2 x $alas x $tinggi = $luas cm^2";
+    }
+    ?>
+    </center>
+    
 
      <!-- footer -->
      <footer class: ="container-footer">

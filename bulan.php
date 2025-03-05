@@ -20,18 +20,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="bulan.php">Bulan</a>
+                <a class="nav-link active" aria-current="page" href="#">Bulan</a>
               </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="segitiga.php">Segitiga</a>
+                    <a class="nav-link active" aria-current="page" href="segitiga.php">Segitiga</a>
               </li>
-                <li class="nav-item">
+                    <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="kubus.php">Kubus</a>
               </li>
             </ul>
@@ -41,48 +41,57 @@
 
     <!-- isi -->
      <div class="container-header">
-        <h1 class="cv">Curiculum Vitae</h1>
+        <h1 class="cv">Bulan</h1>
         <br>
      </div>
-     
+
      <div class="container-content">
-        <img class="img-content" src="DSC08377-20.JPG">
+        <img class="img-content" src="5eb4db6a846b2.jpg">
+        <br><br>
      </div>
-     
-     <br>
+     <center>
+      <br><br>
+    <form action="#" method="post">
+      Pilih Angka 1-12 : <br><input type="number" name="angka">
+      <br>
+      <input type="submit" value="Kirim">
+      <input type="reset" value="Reset">
+    </form>
 
-     <div class="text-align-center">
-        <table class="transparent-table text-align-center mx-auto">
-          <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Ahmad Santosa</td>
-          </tr>
-          <tr>
-            <td>NIM</td>
-            <td>:</td>
-            <td>124240200</td>
-          </tr>
-          <tr>
-            <td>TTL</td>
-            <td>:</td>
-            <td>Klaten, 09 Februari 2005</td>
-          </tr>
-          <tr>
-            <td>Jenis Kelamin</td>
-            <td>:</td>
-            <td>Laki-laki</td>
-          </tr>
-          <tr>
-            <td>Alamat</td>
-            <td>:</td>
-            <td>Jatinom, Klaten</td>
-          </tr>
-        </table>
-     </div>
-
-     <br>
-
+    <?php 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $angka[] = $_POST['angka'];
+      if ($_POST['angka'] == 1) {
+        echo "Bulan Januari";
+        } elseif ($_POST['angka'] == 2) {
+        echo "Bulan Februari";
+        } elseif ($_POST['angka'] == 3) {
+          echo "Bulan Maret";
+        } elseif ($_POST['angka'] == 4) {
+          echo "Bulan April";
+        } elseif ($_POST['angka'] == 5) {
+          echo "Bulan Mei";
+        } elseif ($_POST['angka'] == 6) {
+          echo "Bulan Juni";
+        } elseif ($_POST['angka'] == 7) {
+          echo "Bulan Juli";
+        } elseif ($_POST['angka'] == 8) {
+          echo "Bulan Agustus";
+        } elseif ($_POST['angka'] == 9) {
+          echo "Bulan September";
+        } elseif ($_POST['angka'] == 10) {
+          echo "Bulan Oktober";
+        } elseif ($_POST['angka'] == 11) {
+          echo "Bulan November";
+        } elseif ($_POST['angka'] == 12) {
+          echo "Bulan Desember";
+        } elseif (empty($_POST['angka'])) {
+          echo "Pilih Angka 1-12";
+        } else {
+          echo "Pilih angka yang sesuai";}
+        }
+    ?>
+</center>
      <!-- footer -->
      <footer class: ="container-footer">
       <div>

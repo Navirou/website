@@ -20,19 +20,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="bulan.php">Bulan</a>
-              </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="segitiga.php">Segitiga</a>
-              </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="kubus.php">Kubus</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="segitiga.php">Segitiga</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Kubus</a>
               </li>
             </ul>
           </div>
@@ -40,49 +37,31 @@
       </nav>
 
     <!-- isi -->
-     <div class="container-header">
-        <h1 class="cv">Curiculum Vitae</h1>
+    <center><div class="container-header">
+        <h1>Kubus</h1>
         <br>
      </div>
-     
+
      <div class="container-content">
-        <img class="img-content" src="DSC08377-20.JPG">
+        <img class="img-content" src="3d-cube-icon-vector.jpg">
      </div>
-     
-     <br>
+    
+    <form action="#" method="post">
+      <br><br>
+      mau sisinya berapa cm : <input type="number" name="sisi">
+      <br>
+      <input type="submit" value="Kirim">
+      <input type="reset" value="Reset">
+    </form>
 
-     <div class="text-align-center">
-        <table class="transparent-table text-align-center mx-auto">
-          <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Ahmad Santosa</td>
-          </tr>
-          <tr>
-            <td>NIM</td>
-            <td>:</td>
-            <td>124240200</td>
-          </tr>
-          <tr>
-            <td>TTL</td>
-            <td>:</td>
-            <td>Klaten, 09 Februari 2005</td>
-          </tr>
-          <tr>
-            <td>Jenis Kelamin</td>
-            <td>:</td>
-            <td>Laki-laki</td>
-          </tr>
-          <tr>
-            <td>Alamat</td>
-            <td>:</td>
-            <td>Jatinom, Klaten</td>
-          </tr>
-        </table>
-     </div>
-
-     <br>
-
+    <?php 
+    if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $sisi = $_POST['sisi'];
+    $volume = $sisi * $sisi * $sisi;
+    echo "Vkubus = $sisi x $sisi x $sisi = $volume cm^3";
+    }    
+    ?>
+    </center>
      <!-- footer -->
      <footer class: ="container-footer">
       <div>

@@ -27,8 +27,8 @@ body {
 }
 
 .img-content {
-    width: 210px;
-    height: 280px;
+    width: auto;
+    height: auto;
 }
 
 .container-paragraph {
@@ -50,8 +50,10 @@ nav {
     vertical-align: top;
 }
 
-.container-form {
-    padding: 5%;
+.container-form {   
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 footer {
